@@ -28,9 +28,29 @@ function Portfolio() {
       </section>
 
       <section className="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out for collaborations or just a friendly chat!</p>
-        <a href="mailto:maggie@example.com" className="contact-button">Get in Touch</a>
+        <div className="contact-container">
+          <h2>Contact Me</h2>
+          <p className="text-gray-700 mb-4">
+            Interested in working together or have questions about my work? I'm available for freelance,
+            full-time roles, and collaborative tech projects. Drop me a message and I'll get back to you shortly.
+          </p>
+          <p>Feel free to reach out for collaborations or just a friendly chat!</p>
+          <a 
+            href="mailto:mellinwood1023.com" 
+            className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded transition"
+          >
+            📧 Get in Touch
+          </a>
+          <br />
+          <a 
+            href="https://www.linkedin.com/in/magdalene-e-855814352" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded transition"
+          >
+            LinkedIn
+          </a>
+        </div>
       </section>
     </main>
   );

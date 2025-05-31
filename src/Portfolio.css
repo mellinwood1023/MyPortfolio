@@ -1,28 +1,45 @@
 /* Portfolio.css */
+body {
+  background: linear-gradient(135deg, #f4e2d8, #d3c4e3);
+  color: #333;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
 main {
   padding: 2rem;
-  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .hero {
+  background: rgba(255, 255, 255, 0.5); /* More translucent white background */
+  border-radius: 12px;
+  padding: 2rem;
   text-align: center;
   margin-bottom: 4rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  margin: 0 auto 4rem auto; /* Center the box and add spacing */
 }
 
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: #6b4f4f;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hero h2 {
-  font-size: 2rem;
-  color: #646cff;
+  font-size: 1.5rem;
+  color: #8b5e83;
   margin-bottom: 1rem;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  color: #888;
+  font-size: 1rem;
+  color: #5a5a5a;
 }
 
 .featured-projects {
@@ -31,46 +48,71 @@ main {
 
 .featured-projects h2 {
   text-align: center;
+  font-size: 1.8rem;
+  color: #6b4f4f;
   margin-bottom: 2rem;
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .project-card {
+  background: linear-gradient(135deg, #f4e2d8, #d3c4e3);
+  border-radius: 12px;
   padding: 1.5rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
   text-align: center;
-  background-color: #f9f9f9;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .project-card h3 {
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  color: #8b5e83;
 }
 
 .project-card p {
-  color: #666;
+  font-size: 0.9rem;
+  color: #5a5a5a;
 }
 
 .contact {
   text-align: center;
 }
 
+.contact-container {
+  background: rgba(255, 255, 255, 0.5); /* Translucent white background */
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .contact-button {
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  background-color: #646cff;
-  color: white;
-  border-radius: 8px;
+  background: linear-gradient(135deg, #d3c4e3, #f4e2d8);
+  color: #6b4f4f;
+  border: none;
+  border-radius: 12px;
   text-decoration: none;
   font-size: 1rem;
-  transition: background-color 0.3s;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .contact-button:hover {
-  background-color: #535bf2;
+  background: linear-gradient(135deg, #f4e2d8, #d3c4e3);
+  transform: translateY(-3px);
 }

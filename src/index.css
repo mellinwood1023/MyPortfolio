@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Quicksand', Georgia, 'Times New Roman', Times, serif , sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -12,6 +12,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
 
 a {
   font-weight: 500;
@@ -28,6 +30,12 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+
+  /* Set the entire background of the portfolio to a flower image */
+  background: url('https://source.unsplash.com/1920x1080/?flowers,boho') center/cover no-repeat fixed;
+  color: #333;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0;
 }
 
 h1 {
