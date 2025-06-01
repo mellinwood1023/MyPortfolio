@@ -23,7 +23,7 @@ function Contact() {
         <button type="submit">Submit</button>
       </form>
       <a href="mailto:maggie@example.com" className="contact-button">Email Me</a>
-      <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="contact-button">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/magdalene-e-855814352" target="_blank" rel="noopener noreferrer" className="contact-button">LinkedIn</a>
       <a href="https://github.com/mellinwood1023" target="_blank" rel="noopener noreferrer" className="contact-button">GitHub</a>
     </div>
   );
