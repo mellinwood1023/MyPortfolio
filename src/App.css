@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background: linear-gradient(135deg, #ffe4e1, #ffb6c1); /* Coral pink gradient */
+  color: #333;
 }
 
 .logo {
