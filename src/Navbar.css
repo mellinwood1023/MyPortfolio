@@ -1,0 +1,42 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5); /* Translucent white background */
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100vw; /* Ensure full width */
+  max-width: none; /* Remove any constraints */
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #880e4f;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ad1457;
+}
+
+.active {
+  font-weight: bold;
+  color: #ad1457;
+}

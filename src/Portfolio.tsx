@@ -1,6 +1,15 @@
 import './Portfolio.css';
 
 function Portfolio() {
+  const projects = [
+    { title: 'Project One', link: 'https://example.com/project1', repo: 'https://github.com/user/project1' },
+    { title: 'Project Two', link: 'https://example.com/project2', repo: 'https://github.com/user/project2' },
+    { title: 'Project Three', link: 'https://example.com/project3', repo: 'https://github.com/user/project3' },
+    { title: 'Project Four', link: 'https://example.com/project4', repo: 'https://github.com/user/project4' },
+    { title: 'Project Five', link: 'https://example.com/project5', repo: 'https://github.com/user/project5' },
+    { title: 'Project Six', link: 'https://example.com/project6', repo: 'https://github.com/user/project6' },
+  ];
+
   return (
     <main>
       <section className="hero">
@@ -12,18 +21,14 @@ function Portfolio() {
       <section className="featured-projects">
         <h2>Featured Projects</h2>
         <div className="projects-grid">
-          <div className="project-card">
-            <h3>Project One</h3>
-            <p>A brief description of the project.</p>
-          </div>
-          <div className="project-card">
-            <h3>Project Two</h3>
-            <p>A brief description of the project.</p>
-          </div>
-          <div className="project-card">
-            <h3>Project Three</h3>
-            <p>A brief description of the project.</p>
-          </div>
+          {projects.map((project, index) => (
+            <div key={index} className="project-card">
+              <h3>{project.title}</h3>
+              <p>A brief description of the project.</p>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">Deployed Application</a>
+              <a href={project.repo} target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -39,15 +44,6 @@ function Portfolio() {
             className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded transition"
           >
             📧 Get in Touch
-          </a>
-          <br />
-          <a 
-            href="https://www.linkedin.com/in/magdalene-e-855814352" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded transition"
-          >
-            LinkedIn
           </a>
         </div>
       </section>
