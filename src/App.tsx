@@ -2,6 +2,7 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import './App.css';
 import Portfolio from './Portfolio';
+import Footer from './Footer';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -26,6 +27,7 @@ function App() {
         Click on the React logo to learn more
       </p>
       <Portfolio />
+      <Footer />
     </>
   );
 }
