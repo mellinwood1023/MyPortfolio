@@ -4,7 +4,7 @@ function Resume() {
   return (
     <div className="resume-page">
       <h1>Resume</h1>
-      <a href="/resume.pdf" download className="resume-download">Download My Resume</a>
+      <a href="/Resume_2025.pdf" download="Resume_2025.pdf" className="resume-download">Download My Resume</a>
       <h2>Proficiencies</h2>
       <ul>
         <li>JavaScript</li>
