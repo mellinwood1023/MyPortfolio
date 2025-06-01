@@ -89,14 +89,15 @@ main {
   text-align: center;
 }
 
+/* Adjusted the Contact Me box to match the width of the header */
 .contact-container {
-  background: rgba(255, 255, 255, 0.5); /* Translucent white background */
-  border-radius: 12px;
+  max-width: 1200px; /* Match the header's max-width */
+  margin: 0 auto; /* Center the box */
   padding: 2rem;
+  background: rgba(253, 253, 252, 0.5);
+  border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  display: inline-block;
   text-align: center;
-  margin: 0 auto;
 }
 
 .contact-button {
